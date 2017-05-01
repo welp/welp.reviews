@@ -1,7 +1,7 @@
-class CreateBusinessInfos < ActiveRecord::Migration[5.1]
+class CreateRestaurantInfos < ActiveRecord::Migration[5.1]
   def change
-    create_table :business_infos do |t|
-      t.integer :business_id
+    create_table :restaurant_infos do |t|
+      t.integer :restaurant_id
       t.boolean :reservations
       t.boolean :delivery
       t.boolean :takeout
