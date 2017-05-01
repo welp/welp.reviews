@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170501014819) do
+ActiveRecord::Schema.define(version: 20170501014942) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -63,6 +63,29 @@ ActiveRecord::Schema.define(version: 20170501014819) do
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.integer "parent_category_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_profiles", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "name"
+    t.string "nickname"
+    t.string "tagline"
+    t.text "loves"
+    t.string "find_in"
+    t.string "hometown"
+    t.string "website"
+    t.string "when_not_welping"
+    t.string "second_favorite_site"
+    t.string "last_book"
+    t.string "first_concert"
+    t.string "favorite_movie"
+    t.string "last_meal"
+    t.string "secret"
+    t.string "recent_discovery"
+    t.string "crush"
+    t.string "language"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
