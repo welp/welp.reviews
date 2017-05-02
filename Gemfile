@@ -15,6 +15,10 @@ gem 'pg', '~> 0.18'
 # Serialize with ActiveModel::Serializers
 gem 'active_model_serializers', '~> 0.10'
 
+# Easily paginate with Link headers
+gem 'kaminari'
+gem 'api-pagination', '~> 4.5'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 
