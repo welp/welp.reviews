@@ -1,3 +1,3 @@
 class RestaurantInfo < ApplicationRecord
-  belongs_to :restaurant
+  belongs_to :restaurant, optional: false
 end

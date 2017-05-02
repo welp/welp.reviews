@@ -1,4 +1,4 @@
 class Tip < ApplicationRecord
-  belongs_to :user
-  belongs_to :restaurant
+  belongs_to :user,       optional: false
+  belongs_to :restaurant, optional: false
 end

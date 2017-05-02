@@ -7,4 +7,7 @@ class Restaurant < ApplicationRecord
   belongs_to :primary_category,   class_name: 'Category', optional: false
   belongs_to :secondary_category, class_name: 'Category', optional: true
   belongs_to :tertiary_category,  class_name: 'Category', optional: true
+
+  validates :name, presence: true
+  validates :price, inclusion: { in: 1..4 }
 end
