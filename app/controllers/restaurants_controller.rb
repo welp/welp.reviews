@@ -1,4 +1,6 @@
 class RestaurantsController < ApplicationController
+  before_action :require_authorization!, except: [:index, :show]
+
   def index
     restaurants = Restaurant.includes(
       :primary_category,
