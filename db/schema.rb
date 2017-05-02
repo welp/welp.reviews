@@ -16,14 +16,14 @@ ActiveRecord::Schema.define(version: 20170501015024) do
   enable_extension "plpgsql"
 
   create_table "categories", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.integer "parent_category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "restaurant_infos", force: :cascade do |t|
-    t.integer "restaurant_id"
+    t.integer "restaurant_id", null: false
     t.boolean "reservations"
     t.boolean "delivery"
     t.boolean "takeout"
@@ -52,40 +52,40 @@ ActiveRecord::Schema.define(version: 20170501015024) do
   end
 
   create_table "restaurants", force: :cascade do |t|
-    t.string "name"
-    t.integer "price"
+    t.string "name", null: false
+    t.integer "price", null: false
     t.string "url"
     t.string "menu_url"
-    t.boolean "closed"
+    t.boolean "closed", default: false
     t.text "address"
     t.string "phone"
     t.text "hours"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "primary_category_id"
+    t.integer "primary_category_id", null: false
     t.integer "secondary_category_id"
     t.integer "tertiary_category_id"
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "restaurant_id"
-    t.integer "rating"
-    t.text "body"
+    t.integer "user_id", null: false
+    t.integer "restaurant_id", null: false
+    t.integer "rating", null: false
+    t.text "body", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "tips", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "restaurant_id"
-    t.string "body"
+    t.integer "user_id", null: false
+    t.integer "restaurant_id", null: false
+    t.string "body", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "user_profiles", force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "user_id", null: false
     t.string "name"
     t.string "nickname"
     t.string "tagline"
@@ -108,9 +108,9 @@ ActiveRecord::Schema.define(version: 20170501015024) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "email"
-    t.string "password_digest"
+    t.string "username", null: false
+    t.string "email", null: false
+    t.string "password_digest", null: false
     t.string "city"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
