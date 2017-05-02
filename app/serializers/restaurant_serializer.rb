@@ -1,6 +1,6 @@
 class RestaurantSerializer < ApplicationSerializer
-  attributes :id, :name, :price, :is_closed, :url, :menu_url, :address, :phone,
-             :hours, :categories, :takes_reservations, :has_delivery,
+  attributes :id, :name, :rating, :price, :is_closed, :url, :menu_url, :address,
+             :phone, :hours, :categories, :takes_reservations, :has_delivery,
              :has_takeout, :accepts_credit_cards, :good_for, :parking,
              :has_bike_parking, :is_wheelchair_accessible, :good_for_kids,
              :good_for_groups, :attire, :ambience, :noise_level, :alcohol,

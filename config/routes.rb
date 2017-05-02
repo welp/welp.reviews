@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :restaurants, path: '/api/v1/restaurants'
+  resources :restaurants, path: '/api/v1/restaurants' do
+    resources :reviews
+    resources :tips
+  end
+
   resources :categories,  path: '/api/v1/categories', only: [:index, :show]
   resources :users,       path: '/api/v1/users', only: [:show, :create]
 

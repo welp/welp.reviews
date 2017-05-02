@@ -8,6 +8,8 @@ class ApplicationController < ActionController::API
   def require_authorization!
     unless current_user
       render json: { error: 'Must be logged in' }, status: 401
+
+      throw(:abort)
     end
   end
 

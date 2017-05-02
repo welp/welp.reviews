@@ -10,4 +10,9 @@ class Restaurant < ApplicationRecord
 
   validates :name, presence: true
   validates :price, inclusion: { in: 1..4, message: 'Must be between $ and $$$$' }
+
+  # Get a restaurant's rating to the nearest half star
+  def rating
+    (reviews.average(:rating) * 2).round / 2.0
+  end
 end
