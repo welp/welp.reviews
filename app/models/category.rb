@@ -7,7 +7,8 @@ class Category < ApplicationRecord
   has_many :children,
     class_name: 'Category',
     inverse_of: :parent,
-    foreign_key: :parent_category_id
+    foreign_key: :parent_category_id,
+    dependent: :destroy
 
   validates :name, presence: true
 end

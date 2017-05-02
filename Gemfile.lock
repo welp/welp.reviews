@@ -124,6 +124,8 @@ GEM
       pry
     pry-pretty-numeric (0.1.1)
       pry
+    pry-rails (0.3.6)
+      pry (>= 0.10.4)
     pry-rescue (1.4.5)
       interception (>= 0.5)
       pry
@@ -202,6 +204,7 @@ DEPENDENCIES
   kaminari
   listen (>= 3.0.5, < 3.2)
   pg (~> 0.18)
+  pry-rails
   pry-suite
   puma (~> 3.7)
   rails (~> 5.1.0)

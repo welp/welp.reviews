@@ -1,12 +1,12 @@
 class RestaurantSerializer < ApplicationSerializer
   attributes :name, :price, :is_closed, :url, :menu_url, :address, :phone,
-             :hours, :categories, :takes_reservations :has_delivery,
+             :hours, :categories, :takes_reservations, :has_delivery,
              :has_takeout, :accepts_credit_cards, :good_for, :parking,
              :has_bike_parking, :is_wheelchair_accessible, :good_for_kids,
              :good_for_groups, :attire, :ambience, :noise_level, :alcohol,
-             :has_happy_hour, :best_nights, :smoking, :has_outdoor_seating,
-             :wifi, :has_tv, :is_dog_friendly, :does_catering,
-             :has_gender_neutral_restrooms
+             :has_happy_hour, :best_nights, :is_smoking_friendly,
+             :has_outdoor_seating, :wifi, :has_tv, :is_dog_friendly,
+             :does_catering, :has_gender_neutral_restrooms
 
   delegate :good_for, :parking, :attire, :ambience, :noise_level, :alcohol, :wifi,
     to: :restaurant_info
