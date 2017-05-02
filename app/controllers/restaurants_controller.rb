@@ -1,6 +1,6 @@
-class RestaurantsController < ActionController::API
+class RestaurantsController < ApplicationController
   def index
-    restaurants = Restaurant.includes
+    restaurants = Restaurant.includes(
       :primary_category,
       :secondary_category,
       :tertiary_category,
@@ -59,7 +59,7 @@ class RestaurantsController < ActionController::API
     @restaurant_params[:closed] = params[:is_closed]
     @restaurant_params[:price] = params[:price].length
 
-    @restaurant_params
+    @restaurant_params.permit!
   end
 
   def restaurant_info_params
@@ -80,6 +80,8 @@ class RestaurantsController < ActionController::API
     @restaurant_info_params[:television] = params[:has_tv]
     @restaurant_info_params[:dog_friendly] = params[:is_dog_friendly]
     @restaurant_info_params[:caters] = params[:does_catering]
-    @restaurant_info_params[:gender_neutral_restrooms] = params[:has_gender_neutral_restrooms ]
+    @restaurant_info_params[:gender_neutral_restrooms] = params[:has_gender_neutral_restrooms]
+
+    @restaurant_info_params.permit!
   end
 end

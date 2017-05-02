@@ -1,5 +1,5 @@
 class RestaurantSerializer < ApplicationSerializer
-  attributes :name, :price, :is_closed, :url, :menu_url, :address, :phone,
+  attributes :id, :name, :price, :is_closed, :url, :menu_url, :address, :phone,
              :hours, :categories, :takes_reservations, :has_delivery,
              :has_takeout, :accepts_credit_cards, :good_for, :parking,
              :has_bike_parking, :is_wheelchair_accessible, :good_for_kids,
@@ -20,7 +20,13 @@ class RestaurantSerializer < ApplicationSerializer
   end
 
   def categories
-    [primary_category, secondary_category, tertiary_category].map(&:name).compact
+    categories = [
+      object.primary_category,
+      object.secondary_category,
+      object.tertiary_category
+    ].compact
+
+    ActiveModel::Serializer::CollectionSerializer.new(categories).as_json
   end
 
   def takes_reservations
