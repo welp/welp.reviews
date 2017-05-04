@@ -39,7 +39,7 @@ Types::User = GraphQL::ObjectType.define do
   field :thingsILove, types[types.String], 'Things this User loves.' do
     resolve -> (user, arguments, context) {
       if user.user_profile.loves.present?
-        user.user_profile.loves.split(',').map(&:trim)
+        user.user_profile.loves.split(',').map(&:strip)
       else
         []
       end
