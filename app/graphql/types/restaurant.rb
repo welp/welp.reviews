@@ -5,6 +5,18 @@ Types::Restaurant = GraphQL::ObjectType.define do
   field :id, !types.Int, "The Restaurant's unique identifier."
   field :name, !types.String, 'What the owners of the Restaurant decided to call it.'
 
+  field :categories, !types[!Types::Category] do
+    description 'The categories this Restaurant belongs in, from most to least relevant.'
+
+    resolve -> (restaurant, arguments, context) {
+      [
+        restaurant.primary_category,
+        restaurant.secondary_category,
+        restaurant.tertiary_category
+      ].compact
+    }
+  end
+
   field :price, !types.String do
     description 'How cheap or expensive the Restaurant is on a scale of $ to $$$$.'
 
