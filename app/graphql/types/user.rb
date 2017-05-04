@@ -20,7 +20,7 @@ Types::User = GraphQL::ObjectType.define do
   # need to subject the client to our internal implementation details.
   field :name, types.String, '' do
     resolve -> (user, arguments, context) {
-      user.profile.
+      user.profile.name
     }
   end
 
@@ -36,7 +36,7 @@ Types::User = GraphQL::ObjectType.define do
     }
   end
 
-  field :thingsILove, types[String], 'Things this User loves.' do
+  field :thingsILove, types[types.String], 'Things this User loves.' do
     resolve -> (user, arguments, context) {
       if user.profile.loves.present?
         user.profile.loves.split(',').map(&:trim)

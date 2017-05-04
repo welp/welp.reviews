@@ -1,1 +1,1 @@
-GraphiQL::Rails.config.headers['Authorization'] = -> { "Token #{User.first.token}" }
+GraphiQL::Rails.config.headers['Authorization'] = -> (context) { "Token #{User.first.token}" }

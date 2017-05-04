@@ -6,6 +6,6 @@ Types::Tip = GraphQL::ObjectType.define do
 
   field :id,   !types.Int, "The Tip's unique identifier."
 
-  field :user, !types.User, 'The User that wrote this Tip.'
-  field :restaurant, !types.Restaurant, 'The Restaurant this Tip is for.'
+  field :user, !Types::User, 'The User that wrote this Tip.'
+  field :restaurant, !Types::Restaurant, 'The Restaurant this Tip is for.'
 end

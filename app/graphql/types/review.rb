@@ -7,6 +7,6 @@ Types::Review = GraphQL::ObjectType.define do
   field :id, !types.Int, "The Review's unique identifier."
   field :rating, !types.Int, "The Review's numeric rating."
 
-  field :user, !types.User, 'The User that wrote this Review.'
-  field :restaurant, !types.Restaurant, 'The Restaurant this Review is for.'
+  field :user, !Types::User, 'The User that wrote this Review.'
+  field :restaurant, !Types::Restaurant, 'The Restaurant this Review is for.'
 end
