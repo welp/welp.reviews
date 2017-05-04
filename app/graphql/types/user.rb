@@ -5,6 +5,17 @@ Types::User = GraphQL::ObjectType.define do
   field :id, !types.Int, "The User's unique identifier."
   field :username, !types.String, "The User's unique (and human-readable) username."
 
+  field :reviews, !types[Types::Review] do
+    description 'A list of Reviews left by this User.'
+
+    argument :page, types.Int, 'Which page of reviews you would like.', default_value: 1
+    argument :perPage, types.Int, 'How many reviews you would like per page.', default_value: 25
+
+    resolve -> (user, arguments, context) {
+      user.reviews.page(arguments[:page]).per(arguments[:perPage])
+    }
+  end
+
   # All of the associated UserProfile fields. Let's just include them here; no
   # need to subject the client to our internal implementation details.
   field :name, types.String, '' do

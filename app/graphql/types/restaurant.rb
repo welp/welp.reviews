@@ -20,6 +20,28 @@ Types::Restaurant = GraphQL::ObjectType.define do
   field :phone, types.String, 'A number you can use to call the Restaurant on a phone.'
   field :hours, types.String, 'When the Restaurant is open. No particular formatting, sorry.'
 
+  field :reviews, !types[Types::Review] do
+    description 'A list of Reviews left on this Restaurant.'
+
+    argument :page, types.Int, 'Which page of reviews you would like.', default_value: 1
+    argument :perPage, types.Int, 'How many reviews you would like per page.', default_value: 25
+
+    resolve -> (restaurant, arguments, context) {
+      restaurant.reviews.page(arguments[:page]).per(arguments[:perPage])
+    }
+  end
+
+  field :tips, !types[Types::Tip] do
+    description 'A list of Tips left about this Restaurant.'
+
+    argument :page, types.Int, 'Which page of tips you would like.', default_value: 1
+    argument :perPage, types.Int, 'How many tips you would like per page.', default_value: 25
+
+    resolve -> (restaurant, arguments, context) {
+      restaurant.tips.page(arguments[:page]).per(arguments[:perPage])
+    }
+  end
+
   # All of the associated RestaurantInfo fields. Let's just include them here; no
   # need to subject the client to our internal implementation details.
 
