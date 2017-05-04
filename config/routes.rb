@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  mount GraphiQL::Rails::Engine, at: '/', graphql_path: "/api/graphql"
+
+  post '/api/graphql', to: 'graphql#execute'
+
   resources :restaurants, path: '/api/v1/restaurants' do
     resources :reviews
     resources :tips

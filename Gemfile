@@ -12,6 +12,10 @@ gem 'rails', '~> 5.1.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 
+# GraphQL!
+gem 'graphql', '~> 1.5'
+gem 'graphiql-rails', '~> 1.4'
+
 # Serialize with ActiveModel::Serializers
 gem 'active_model_serializers', '~> 0.10'
 
