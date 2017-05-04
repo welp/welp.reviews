@@ -8,12 +8,12 @@ Types::Restaurant = GraphQL::ObjectType.define do
     description 'How cheap or expensive the Restaurant is on a scale of $ to $$$$.'
 
     resolve -> (restaurant, arguments, context) {
-      restaurant.price * '$'
+      '$' * restaurant.price
     }
   end
 
-  field :url, types.String, "The Restaurant's external URL."
-  field :menu_url, types.String, "A URL to the Restaurant's menu."
+  field :url, Types::URI, "The Restaurant's external URL."
+  field :menuUrl, Types::URI, "A URL to the Restaurant's menu.", property: :menu_url
   field :closed, !types.Boolean, 'Whether or not the Restaurant is permanently closed.'
   field :address, types.String, 'The physical address of the Restaurant.'
   field :phone, types.String, 'A number you can use to call the Restaurant on a phone.'

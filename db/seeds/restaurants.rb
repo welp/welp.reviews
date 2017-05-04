@@ -153,8 +153,7 @@ unless Restaurant.where(name: 'Coava Coffee Roasters').exists?
   coava = Restaurant.create({
     name: 'Coava Coffee Roasters',
     price: 1,
-    url: 'http://www.breakside.com',
-    menu_url: 'http://www.breakside.com/dekum-pub/',
+    url: 'http://coavacoffee.com',
     address: '1300 SE Grand Ave, Portland, OR 97214',
     phone: '+1 (503) 894-8134',
     hours: '6am-6pm Monday-Friday, 7am-6pm Saturday-Sunday',
