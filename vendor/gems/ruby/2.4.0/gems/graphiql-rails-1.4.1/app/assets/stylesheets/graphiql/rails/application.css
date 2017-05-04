@@ -1,0 +1,10 @@
+/*
+ = require ./graphiql-0.8.1
+*/
+
+html, body, #graphiql-container {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}

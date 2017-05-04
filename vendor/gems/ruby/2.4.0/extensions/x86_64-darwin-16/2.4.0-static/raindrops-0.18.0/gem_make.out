@@ -1,0 +1,33 @@
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/raindrops-0.18.0/ext/raindrops
+/Users/gjtorikian/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20170429-70442-1cp5hn9.rb extconf.rb 
+checking for mmap() in sys/mman.h... yes
+checking for munmap() in sys/mman.h... yes
+checking for mremap() in sys/mman.h... no
+checking for linux/tcp.h... no
+checking for netinet/tcp.h... yes
+checking for netinet/tcp_fsm.h... yes
+checking for struct tcp_info in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,netinet/tcp.h,netinet/tcp_fsm.h... no
+checking for getpagesize() in unistd.h... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_io_blocking_region()... yes
+checking for GCC 4+ atomic builtins... yes
+creating extconf.h
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/extensions/x86_64-darwin-16/2.4.0-static/raindrops-0.18.0/mkmf.log
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/raindrops-0.18.0/ext/raindrops
+make "DESTDIR=" clean
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/raindrops-0.18.0/ext/raindrops
+make "DESTDIR="
+compiling linux_inet_diag.c
+compiling raindrops.c
+compiling tcp_info.c
+linking shared-object raindrops_ext.bundle
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/raindrops-0.18.0/ext/raindrops
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 raindrops_ext.bundle ./.gem.20170429-70442-f1xyye

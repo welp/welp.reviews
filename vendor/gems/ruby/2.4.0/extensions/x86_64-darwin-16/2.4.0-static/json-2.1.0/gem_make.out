@@ -1,0 +1,13 @@
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/json-2.1.0/ext/json
+/Users/gjtorikian/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20170504-41950-nnqhjl.rb extconf.rb 
+creating Makefile
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/json-2.1.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/json-2.1.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/json-2.1.0/ext/json
+make "DESTDIR=" install

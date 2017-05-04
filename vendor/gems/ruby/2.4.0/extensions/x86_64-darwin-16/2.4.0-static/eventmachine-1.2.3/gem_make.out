@@ -1,0 +1,20 @@
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/eventmachine-1.2.3/ext/fastfilereader
+/Users/gjtorikian/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20170429-70442-8huhuu.rb extconf.rb --with-cppflags=-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/extensions/x86_64-darwin-16/2.4.0-static/eventmachine-1.2.3/mkmf.log
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/eventmachine-1.2.3/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/eventmachine-1.2.3/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/eventmachine-1.2.3/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20170429-70442-1xid4f5

@@ -1,0 +1,25 @@
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/unicorn-4.6.2/ext/unicorn_http
+/Users/gjtorikian/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20170429-70442-19pm7hy.rb extconf.rb 
+checking for SIZEOF_OFF_T in ruby.h... yes
+checking for SIZEOF_SIZE_T in ruby.h... yes
+checking for SIZEOF_LONG in ruby.h... yes
+checking for rb_str_set_len() in ruby.h... yes
+checking for gmtime_r() in time.h... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/extensions/x86_64-darwin-16/2.4.0-static/unicorn-4.6.2/mkmf.log
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/unicorn-4.6.2/ext/unicorn_http
+make "DESTDIR=" clean
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/unicorn-4.6.2/ext/unicorn_http
+make "DESTDIR="
+compiling httpdate.c
+compiling unicorn_http.c
+linking shared-object unicorn_http.bundle
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/unicorn-4.6.2/ext/unicorn_http
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 unicorn_http.bundle ./.gem.20170429-70442-1ts8kgh

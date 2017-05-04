@@ -1,0 +1,11 @@
+"clang -o conftest -I/Users/gjtorikian/.rbenv/versions/2.4.0/include/ruby-2.4.0/x86_64-darwin16 -I/Users/gjtorikian/.rbenv/versions/2.4.0/include/ruby-2.4.0/ruby/backward -I/Users/gjtorikian/.rbenv/versions/2.4.0/include/ruby-2.4.0 -I. -I/usr/local/opt/openssl/include  -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/gjtorikian/.rbenv/versions/2.4.0/lib -L. -L/Users/gjtorikian/.rbenv/versions/2.4.0/lib  -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -lgmp -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+

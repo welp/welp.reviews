@@ -1,0 +1,766 @@
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+GraphiQLControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+-------------------------------------------------------------
+GraphiQL::Rails::GraphiQLControllerTest: test_should_get_show
+-------------------------------------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+-------------------------------------------------------------
+GraphiQL::Rails::GraphiQLControllerTest: test_should_get_show
+-------------------------------------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+-------------------------------------------------------------
+GraphiQL::Rails::GraphiQLControllerTest: test_should_get_show
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::GraphiQLController#show as HTML
+Completed 500 Internal Server Error in 14ms
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+-------------------------------------------------------------
+GraphiQL::Rails::GraphiqlControllerTest: test_should_get_show
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::GraphiqlController#show as HTML
+Completed 500 Internal Server Error in 8ms
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (2.5ms)
+Completed 200 OK in 9ms (Views: 9.2ms)
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (1.0ms)
+Completed 200 OK in 9ms (Views: 9.2ms)
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (1.7ms)
+Completed 200 OK in 14ms (Views: 13.4ms)
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (5.1ms)
+Completed 500 Internal Server Error in 12ms
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (3.3ms)
+Completed 500 Internal Server Error in 10ms
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (7.3ms)
+Completed 500 Internal Server Error in 14ms
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (8.0ms)
+Completed 500 Internal Server Error in 16ms
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (1.2ms)
+Completed 200 OK in 9ms (Views: 9.0ms)
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (499.1ms)
+Completed 200 OK in 508ms (Views: 507.7ms)
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (151.5ms)
+Completed 200 OK in 160ms (Views: 159.7ms)
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (166.0ms)
+Completed 200 OK in 174ms (Views: 173.5ms)
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (150.2ms)
+Completed 200 OK in 160ms (Views: 159.5ms)
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphi_ql/rails/editors/show.html.erb (159.1ms)
+Completed 200 OK in 167ms (Views: 167.2ms)
+------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_should_get_show
+------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (166.3ms)
+Completed 200 OK in 176ms (Views: 176.0ms)
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (157.2ms)
+Completed 200 OK in 170ms (Views: 170.0ms)
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.6ms)
+Completed 200 OK in 1ms (Views: 0.9ms)
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (160.1ms)
+Completed 200 OK in 168ms (Views: 167.8ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 1.1ms)
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.6ms)
+Completed 200 OK in 1ms (Views: 1.0ms)
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (159.5ms)
+Completed 200 OK in 167ms (Views: 166.9ms)
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.8ms)
+Completed 200 OK in 1ms (Views: 1.1ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.8ms)
+Completed 200 OK in 1ms (Views: 1.0ms)
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.8ms)
+Completed 200 OK in 1ms (Views: 1.1ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.6ms)
+Completed 200 OK in 1ms (Views: 0.8ms)
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (494.2ms)
+Completed 200 OK in 502ms (Views: 502.1ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.8ms)
+Completed 200 OK in 1ms (Views: 1.2ms)
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.8ms)
+Completed 200 OK in 1ms (Views: 1.1ms)
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (1.3ms)
+Completed 200 OK in 2ms (Views: 1.8ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 0.9ms)
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (130.2ms)
+Completed 200 OK in 137ms (Views: 137.3ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 1.0ms)
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.9ms)
+Completed 200 OK in 1ms (Views: 1.2ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.6ms)
+Completed 200 OK in 1ms (Views: 0.9ms)
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 0.9ms)
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+-------------------------------------------------
+ConfigTest: test_it_adds_CSRF_header_if_requested
+-------------------------------------------------
+-----------------------------------------------
+ConfigTest: test_it_adds_JSON_header_by_default
+-----------------------------------------------
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (549.4ms)
+Completed 500 Internal Server Error in 557ms
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (4.0ms)
+Completed 500 Internal Server Error in 5ms
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (3.3ms)
+Completed 500 Internal Server Error in 4ms
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (137.3ms)
+Completed 500 Internal Server Error in 144ms
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (5.6ms)
+Completed 500 Internal Server Error in 6ms
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (3.1ms)
+Completed 500 Internal Server Error in 3ms
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+-------------------------------------------------
+ConfigTest: test_it_adds_CSRF_header_if_requested
+-------------------------------------------------
+-----------------------------------------------
+ConfigTest: test_it_adds_JSON_header_by_default
+-----------------------------------------------
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (192.0ms)
+Completed 500 Internal Server Error in 199ms
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (6.5ms)
+Completed 500 Internal Server Error in 7ms
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (4.2ms)
+Completed 500 Internal Server Error in 5ms
+-------------------------------------------------
+ConfigTest: test_it_adds_CSRF_header_if_requested
+-------------------------------------------------
+-----------------------------------------------
+ConfigTest: test_it_adds_JSON_header_by_default
+-----------------------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (152.3ms)
+Completed 500 Internal Server Error in 165ms
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (5.3ms)
+Completed 500 Internal Server Error in 6ms
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (3.0ms)
+Completed 500 Internal Server Error in 3ms
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+-------------------------------------------------
+ConfigTest: test_it_adds_CSRF_header_if_requested
+-------------------------------------------------
+-----------------------------------------------
+ConfigTest: test_it_adds_JSON_header_by_default
+-----------------------------------------------
+-------------------------------------------------
+ConfigTest: test_it_adds_CSRF_header_if_requested
+-------------------------------------------------
+-----------------------------------------------
+ConfigTest: test_it_adds_JSON_header_by_default
+-----------------------------------------------
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (149.4ms)
+Completed 500 Internal Server Error in 156ms
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (6.7ms)
+Completed 500 Internal Server Error in 7ms
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (3.1ms)
+Completed 500 Internal Server Error in 3ms
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+-------------------------------------------------
+ConfigTest: test_it_adds_CSRF_header_if_requested
+-------------------------------------------------
+-----------------------------------------------
+ConfigTest: test_it_adds_JSON_header_by_default
+-----------------------------------------------
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (139.8ms)
+Completed 200 OK in 146ms (Views: 146.3ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 1.0ms)
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 1.0ms)
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.9ms)
+Completed 200 OK in 1ms (Views: 1.3ms)
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (130.7ms)
+Completed 200 OK in 138ms (Views: 137.9ms)
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 1.0ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.5ms)
+Completed 200 OK in 1ms (Views: 0.7ms)
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.8ms)
+Completed 200 OK in 1ms (Views: 1.0ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.5ms)
+Completed 200 OK in 1ms (Views: 0.7ms)
+-------------------------------------------------
+ConfigTest: test_it_adds_CSRF_header_if_requested
+-------------------------------------------------
+-----------------------------------------------
+ConfigTest: test_it_adds_JSON_header_by_default
+-----------------------------------------------
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+-------------------------------------------------
+ConfigTest: test_it_adds_CSRF_header_if_requested
+-------------------------------------------------
+-----------------------------------------------
+ConfigTest: test_it_adds_JSON_header_by_default
+-----------------------------------------------
+---------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_renders_headers
+---------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (138.8ms)
+Completed 200 OK in 145ms (Views: 144.8ms)
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 1.0ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 0.9ms)
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.8ms)
+Completed 200 OK in 1ms (Views: 1.0ms)
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.8ms)
+Completed 200 OK in 1ms (Views: 1.1ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.6ms)
+Completed 200 OK in 1ms (Views: 0.8ms)
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+-------------------------------------------------
+ConfigTest: test_it_adds_CSRF_header_if_requested
+-------------------------------------------------
+-----------------------------------------------
+ConfigTest: test_it_adds_JSON_header_by_default
+-----------------------------------------------
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+---------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_renders_headers
+---------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (133.2ms)
+Completed 200 OK in 141ms (Views: 140.4ms)
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 1.0ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.6ms)
+Completed 200 OK in 1ms (Views: 0.8ms)
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.8ms)
+Completed 200 OK in 1ms (Views: 1.1ms)
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.8ms)
+Completed 200 OK in 1ms (Views: 1.1ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.6ms)
+Completed 200 OK in 1ms (Views: 0.8ms)
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (229.3ms)
+Completed 200 OK in 240ms (Views: 239.4ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (2.4ms)
+Completed 200 OK in 3ms (Views: 2.9ms)
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (3.3ms)
+Completed 200 OK in 5ms (Views: 4.4ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (2.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms)
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (8.2ms)
+Completed 200 OK in 9ms (Views: 9.1ms)
+---------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_renders_headers
+---------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (1.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms)
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+-----------------------------------------------
+ConfigTest: test_it_adds_JSON_header_by_default
+-----------------------------------------------
+-------------------------------------------------
+ConfigTest: test_it_adds_CSRF_header_if_requested
+-------------------------------------------------
+--------------------------------------------
+GraphiQL::RailsTest: test_configs_can_be_set
+--------------------------------------------
+---------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_renders_headers
+---------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendering /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (568.4ms)
+Completed 200 OK in 573ms (Views: 572.0ms)
+------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_query_params_config
+------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendering /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 1.0ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendering /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 1.0ms)
+-------------------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_it_uses_initial_query_config
+-------------------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendering /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (1.3ms)
+Completed 200 OK in 2ms (Views: 2.0ms)
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendering /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.7ms)
+Completed 200 OK in 1ms (Views: 1.1ms)
+-------------------------------------------------------------
+GraphiQL::Rails::EditorsControllerTest: test_renders_GraphiQL
+-------------------------------------------------------------
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/my/endpoint"}
+  Rendering /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/rmosolgo/projects/graphiql-rails/app/views/graphiql/rails/editors/show.html.erb (0.9ms)
+Completed 200 OK in 2ms (Views: 1.5ms)
+------------------------------
+EngineTest: test_it_is_defined
+------------------------------
+-----------------------------------------------
+ConfigTest: test_it_adds_JSON_header_by_default
+-----------------------------------------------
+-------------------------------------------------
+ConfigTest: test_it_adds_CSRF_header_if_requested
+-------------------------------------------------

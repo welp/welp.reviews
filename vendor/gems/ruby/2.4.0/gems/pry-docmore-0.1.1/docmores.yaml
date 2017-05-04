@@ -1,0 +1,618 @@
+---
+Ruby Global $stdout (Dollarstdout): ! 'The $stdout global is the current standard
+  output.
+
+
+  This is file descriptor 1, traditionally.
+
+'
+Ruby Global $< (DollarLessthan): ! 'The $< global is the virtual concatenation file
+  of the files given on command line (or from $stdin if no files were given).
+
+'
+! 'Ruby Keyword: case': ! "A convenient conditional that doesn't require the \"subject\"
+  to be repeated.\n\nUses #=== for comparison (\"the threequals\"), which is defined
+  specially for\nvarious objects.\n\n    x = 'asdf'\n    case x\n    when 'asdf';
+  puts 'Found it!'\n    when 'fghj'; puts 'Impossible.'\n    else puts 'Also impossible.'\n
+  \   end\n\n    case x\n    when String; puts 'Yep, will get here.'\n    when Array;
+  puts 'Actually, wait a minute.'\n    when Hash; puts 'This is pretty bad OO.'\n
+  \   else puts 'But, the code works'\n    end\n\n    case x\n    when /^[fdsa]{4}/;
+  puts 'Whoa, works with regexes.'\n    else puts 'Will not get here.'\n    end\n\nAlso
+  works with `Range`s"
+! 'Ruby Keyword: next': ! "Skip to the next iteration of the inner-most loop.\n\nFor
+  example:\n\n    10.times do |i|\n      next unless 0 == i % 3\n      print i\n    end\n
+  \   puts\n\nPrints:\n\n    0369\n\nCompare with: break, last\n"
+! 'Ruby Keyword: begin': ! "Opens a block when `def` or `do` isn't already opening
+  one for you.\n\nUses include:\n\n    begin\n      1/0\n    rescue => e\n      p
+  e\n    else\n      puts 'Cannot get here with that 1/0'\n    ensure\n      puts
+  'OK then.'\n    end\n\nOr something like:\n\n    x = something_falsy || begin\n
+  \     several_steps\n      go_here\n      3\n    end\n    # Now x == 3\n\n(Not to
+  be confused with the BEGIN keyword.)\n"
+Ruby Global $, (DollarComma): ! 'The $, global is the output field separator for the
+  print and Array#join.
+
+'
+! 'Ruby Keyword: or': ! "Boolean disjunction.\n\n  Evaluates to true if either its
+  left or right side are true.\n\n    Remember that the 'or' operator is lower precedence
+  operator than '||', so\n\n  an_expression or another_expression\n    is roughly
+  equivalent to:\n  (an_expression) || (another_expression)\n\nTruth table\n\n  true
+  \ or true  ⇒ true\n  false or true  ⇒ true\n  false or false ⇒ false\n\nPrecedence\n\n
+  \ true or false ? 'yes' : 'no' ⇒ true\n  true || false ? 'yes' : 'no' ⇒ \"yes\"\n\nSee
+  http://phrogz.net/ProgrammingRuby/language.html#table_18.4\n"
+Ruby Global $@ (DollarAt): ! "The $@ global holds the Array of backtrace in the format:\n\n
+  \   \"file:line:in `method`\"\n\nwhile in a `rescue` block.\n"
+Ruby Global $-p (DollarDashp): ! 'The $-p global is true if option -p is set. Read-only
+  variable.
+
+'
+! 'Ruby Keyword: do': ! 'The beginning of a block, to be passed to a method call.
+
+
+  TODO - https://github.com/rking/pry-docmore/wiki
+
+'
+! 'Ruby Keyword: __LINE__': ! "The code's current line number. Can be a handy way
+  to pepper what would\notherwise be `print \"Got here 1\"` statements in your code,
+  e.g.:\n\n    if a\n        p __LINE__\n        # some stuff\n    else\n        p
+  __LINE__\n        # some other stuff\n    end\n\n…but you use the pry-debugger gem
+  instead, don't you?\n"
+! 'Ruby Keyword: module': ! "Usage: module ModuleName; module-contents end\n\nDefines
+  a new Module, or re-opens an existing module. Modules in ruby are\ncollections of
+  code, they have two distinct use-cases:\n\n1. As a Namespace. Often all of the code
+  in a rubygem will be written in the\nsame module to avoid naming collisions with
+  code not in that Gem.\n\n2. As a set of shared functions. Modules can be included
+  into Classes, which\nmakes all of the methods defined in the module available to
+  instances of the\nclass. This can be used to emulate multiple-inheritance, or to
+  divide one large\nclass into more manageable chunks.\n\nNote that, though the class
+  `Class` inherits from `Module`, this is more of an\nimplementation detail than a
+  direct, Liskov-substitutable interface: modules\ncan be `include`d, `extend`ed or
+  `using`d, while classes cannot. (On the other\nhand, classes can be instantiated,
+  where modules cannot).\n\n    module X\n      def foo; 2 end\n    end\n    class
+  Y; include X end\n    class Z; extend X end\n    # Now, these work:\n    Y.new.foo\n
+  \   Z.foo\n    # \"extend just calls include on the eigenclass\"\n    #   Mnemonic!
+  INclude for INstances, Extend for sElf\n\nFor all you ever wanted to know about
+  constant lookup, see:\nhttp://cirw.in/blog/constant-lookup\n"
+Ruby Global $-v (DollarDashv): ! 'Aliased to $VERBOSE
+
+'
+! 'Ruby Keyword: when': ! 'Specific condition of a `case` statement. (See: case)
+
+'
+Ruby Global $-W (DollarDashW): ! 'The $-W global ...pry-docmore TODO!
+
+
+  Please update https://github.com/rking/pry-docmore/wiki/Ruby-Global-$-W-(DollarDashW)
+
+'
+! 'Ruby Keyword: for': ! "A fairly rarely used keyword in Ruby, because we like to
+  write the Enumerable\non the left side to remind us that we're not programming in
+  some other lanuage.\n\nBut, actually, it is a golf win:\n\n    (2..5).each do |i|\n
+  \     p i\n    end\n\nIs equivalent to:\n\n    for i in 2..5\n      p i\n    end\n"
+Ruby Global $-a (DollarDasha): ! 'The $-a global is true if option -a is set.
+
+
+  This is a read-only variable.
+
+'
+! 'Ruby Keyword: def': ! 'Define a method.
+
+
+  # TODO:
+
+  # Describe various signatures
+
+  #   def foo
+
+  #   def foo arg
+
+  #   def foo arg, arg2
+
+  #   def foo *args
+
+  #   def foo arg, *args, arg3
+
+  #   …Ruby 2.0 keyword args?
+
+  # Talk about eigenclasses
+
+
+  Doesn''t work inside another `def`, but can work inside blocks. Compare to
+
+  Module#define_method, which is capable of doing more dynamic tricks.
+
+'
+Ruby Global $LOADED_FEATURES (DollarLOADEDUnderscoreFEATURES): ! 'Aliased to $"
+
+'
+Ruby Global $6 (DollarSix): ! 'The $6 global is the 6th group of the last successful
+  match. May be > 1.
+
+'
+Ruby Global $' (DollarTick): ! "The $' global is the string to the right of the last
+  successful match.\n\nIf you do this:\n\n    str = 'hello goodbye'; str[/good/]\n\nThen
+  this:\n\n    [ $`, $&, $' ]\n\nYields this:\n\n    [\n        \"hello \",\n        \"good\",\n
+  \       \"bye\"\n    ]\n"
+Ruby Global $> (DollarGreaterthan): ! 'The $> global is the default output for print,
+  printf. $stdout by default.
+
+'
+! 'Ruby Keyword: if': ! 'That most fundamental of computing tools.
+
+
+  See: https://en.wikipedia.org/wiki/Turing_completeness
+
+
+  But also see: http://www.refactoring.com/catalog/replaceConditionalWithPolymorphism.html
+
+'
+Ruby Global $\ (DollarBackslash): ! 'The $\ global is the output record separator
+  for the print and IO#write.
+
+
+  Default is nil.
+
+'
+! 'Ruby Keyword: class': ! '- Opens a class definition
+
+  - class << self ← Opens the eigenclass of ''self''
+
+
+  TODO - https://github.com/rking/pry-docmore/wiki
+
+'
+! 'Ruby Keyword: not': ! "Boolean negation.\n\n    if not x\n\nis equivalent to:\n\n
+  \   unless x\n\nNote that the precedence is lower than for `!`. # TODO: elaborate,
+  w/ examples.\nSee: http://phrogz.net/ProgrammingRuby/language.html#table_18.4\n"
+Ruby Global $` (DollarBacktick): ! "The $` global is the string to the left of the
+  last successful match.\n\nIf you do this:\n\n    str = 'hello goodbye'; str[/good/]\n\nThen
+  this:\n\n    [ $`, $&, $' ]\n\nYields this:\n\n    [\n        \"hello \",\n        \"good\",\n
+  \       \"bye\"\n    ]\n"
+! 'Ruby Keyword: redo': ! "Jump back to the top of the inner-most block. E.g.:\n\n
+  \   2.times do |i|\n      3.times do |j|\n        print i,j\n        j += 1\n        redo
+  if 1 == j\n      end\n    end\n    puts\n\nPrints:\n\n    0001010210111112\n\n#
+  TODO: Pick a better example\n"
+Ruby Global $-l (DollarDashl): ! 'The $-l global is true if option -l is set.
+
+
+  Read-only variable.
+
+'
+! 'Ruby Keyword: until': ! "Negated `while`.\n\n    puts 'Guess a letter.'\n    until
+  'y' == $stdin.readline.chomp\n      puts 'Guess again.'\n    end\n"
+! 'Ruby Keyword: BEGIN': ! "Like Perl and Awk before that, defines a block to be run
+  before the others:\n\n    p 3\n    BEGIN { p 1 }\n    p 4\n    BEGIN { p 2 }\n    #
+  …prints these out as 1, 2, 3, 4\n\nThis works because the whole file gets parsed
+  at the beginning (even though\n'class' and 'def' lines are not executed early),
+  so the interpreter can reorder\nthese statements.\n\nSee also: `END`\n(Not to be
+  confused with lower-case `begin`)\n"
+! 'Ruby Keyword: undef': ! "Opposite of `def` — removes a method definition.\n\n   def
+  foo; end\n   undef foo\n   foo ⇒ NameError: undefined local variable or method `foo'
+  for main:Object`\n"
+Ruby Global $DEBUG (DollarDEBUG): ! 'The $DEBUG global is the status of the -d switch.
+
+'
+Ruby Global $4 (DollarFour): ! 'The $4 global is the 4th group of the last successful
+  match. May be > 1.
+
+'
+! 'Ruby Keyword: return': ! "Leave the current method, making the given value.\n\nKeep
+  in mind that the last statement in a Ruby method is its implied value, so\nthese
+  are equivalent:\n\n    def f x\n      if 0 == x % 3\n        return true\n      else\n
+  \       return false\n      end\n    end\n\n    def f x\n      if 0 == x % 3\n        true\n
+  \     else\n        false\n      end\n    end\n\n…but, then, you might as well go
+  all the way with it, as this is equivalent:\n\n    def f x\n      0 == x % 3\n    end\n\nSo,
+  usually, it's only useful as an \"early return\" in Ruby, such as:\n\n    return
+  if arg > 3\n    # rest of method here\n\nNote that you can return out of lambdas
+  but not proc's, e.g.:\n\n    -> { return 3 }.()\n    # ⇒ 3\n    proc { return 3
+  }.()\n    # ⇒ LocalJumpError: unexpected return\n"
+Ruby Global $2 (DollarTwo): ! 'The $2 global is the 2nd group of the last successful
+  match. May be > 1.
+
+'
+! 'Ruby Keyword: false': ! "In Ruby, only `false` and `nil` evaluate to false.\n\n
+  \   def false_check x\n      return if nil == x\n      return if false == x\n      unless
+  x\n        puts \"This will never ever get reached.\"\n      end\n    end\n"
+Ruby Global $-i (DollarDashi): ! 'The $-i global represents in-place-edit mode, this
+  variable holds the extension, otherwise nil.
+
+'
+Ruby Global $! (DollarBang): ! "The $! global is the Exception set by 'rescue'\n\nThis
+  code:\n\n    begin\n      raise 'hi'\n    rescue\n      p $!\n    end\n    p $!\n\nPrints
+  this:\n\n    #<RuntimeError: hi>\n    nil\n"
+Ruby Global $= (DollarEquals): ! 'In older versions of Ruby, setting $= allowed case-insensitive
+  comparisons;
+
+  this is now deprecated in favor of using String#casecmp
+
+'
+Ruby Global $; (DollarSemicolon): ! 'The $; global is the separator for String#split
+  (defaults to nil, which splits on whitespace).
+
+'
+! 'Ruby Keyword: break': ! "Hops out of the inner-most loop. Like this:\n\n    %w(a
+  b c).each do |i|\n      print i\n      32343.times do |j|\n        break if j >
+  2\n        print j\n      end\n    end\n    puts\n\nPrints:\n\n    a012b012c012\n\nAlso
+  note that the keyword accepts an argument:\n\n    x = loop do break 3 end\n    p
+  x\n    # ⇒ 3\n\nCompare with: next, last\n"
+Ruby Global $7 (DollarSeven): ! 'The $7 global is the 7th group of the last successful
+  match. May be > 1.
+
+'
+Ruby Global $-d (DollarDashd): ! 'Aliased to $DEBUG
+
+'
+Ruby Global $-F (DollarDashF): ! 'Aliased to $;
+
+'
+! 'Ruby Keyword: defined?': ! "    defined? nil ⇒ \"nil\"\n    defined? self ⇒ \"self\"\n
+  \   defined? true ⇒ \"true\"\n    defined? false ⇒ \"false\"\n    defined? \"asdf\"
+  ⇒ \"expression\"\n    defined? a = 3 ⇒ \"assignment\" # but doesn't actually set
+  a to 3.\n    defined? printf ⇒ \"method\"\n    printf = 3\n    defined? printf ⇒
+  \"local-variable\" # nil if there is no local or method with that name\n    defined?
+  $foo ⇒ \"global-variable\"  # nil if $foo has not been assigned to\n    defined?
+  Object ⇒ \"constant\"       # nil if there is no constant with that name\n    defined?
+  super ⇒ \"super\"           # nil if there is no super method.\n    defined? yield
+  ⇒ \"yield\"           # nil if no block was passed to this method\n\ndefined? is
+  most often used to determine whether a constant or global variable is defined. For
+  example ruby-1.8.7 didn't have a RUBY_ENGINE constant, so jruby was often detected
+  using:\n\n    defined?(RUBY_ENGINE) && RUBY_ENGINE == \"jruby\"\n\nAnother idiomatic
+  use is to safely call a super-method:\n\n    super if defined?(super)\n\nIt can
+  be used to detect whether a block was passed to this method, though `block_given?`
+  is usually preferred.\n\n    yield if defined?(yield)\n\nAlthough the return value
+  of `defined?` is a string, this is usually ignored and only the truthiness of the
+  result considered.\n\nImprove these docs at https://github.com/rking/pry-docmore/wiki"
+! 'Ruby Keyword: __FILE__': ! "The filename of the code being evaluated. Evaluates
+  to \"(pry)\" within the REPL.\n\nUseful especially for code to locate parts nearby,
+  such as:\n\n    File.dirname(__FILE__)\n"
+Home: ! "This is the input for the actual gem.  Edit these, and the next time the
+  gem\npushes, this info goes with it.\n\nThe goal is for this to be an informative
+  set of docs, full of anything you can\nthink to add, so don't hold back.\n\n- [Ruby
+  Global $1 (DollarOne)](wiki/Ruby Global $1 (DollarOne\\)) | [Ruby Global $2\n  (DollarTwo)](wiki/Ruby
+  Global $2 (DollarTwo\\)) | [Ruby Global $3 (DollarThree)](wiki/Ruby Global $3 (DollarThree\\))
+  | [Ruby Global $4 (DollarFour)](wiki/Ruby Global $4 (DollarFour\\)) | [Ruby Global
+  $5 (DollarFive)](wiki/Ruby Global $5 (DollarFive\\)) | [Ruby Global $6 (DollarSix)](wiki/Ruby
+  Global $6 (DollarSix\\)) | [Ruby Global $7 (DollarSeven)](wiki/Ruby Global $7 (DollarSeven\\))
+  | [Ruby Global $8 (DollarEight)](wiki/Ruby Global $8 (DollarEight\\)) | [Ruby Global
+  $9 (DollarNine)](wiki/Ruby Global $9 (DollarNine\\))\n- [Ruby Global $& (DollarAmpersand)](wiki/Ruby
+  Global $& (DollarAmpersand\\))\n- [Ruby Global $@ (DollarAt)](wiki/Ruby Global $@
+  (DollarAt\\))\n- [Ruby Global $` (DollarBacktick)](wiki/Ruby Global $` (DollarBacktick\\))\n-
+  [Ruby Global $! (DollarBang)](wiki/Ruby Global $! (DollarBang\\))\n- [Ruby Global
+  $= (DollarEquals)](wiki/Ruby Global $= (DollarEquals\\))\n- [Ruby Global $+ (DollarPlus)](wiki/Ruby
+  Global $+ (DollarPlus\\))\n- [Ruby Global $⁄ (DollarSlash)](wiki/Ruby Global $⁄
+  (DollarSlash\\))\n- [Ruby Global $~ (DollarSquiggle)](wiki/Ruby Global $~ (DollarSquiggle\\))\n-
+  [Ruby Global $' (DollarTick)](wiki/Ruby Global $' (DollarTick\\))\n- [Ruby Global
+  $KCODE (DollarKCODE)](wiki/Ruby Global $KCODE (DollarKCODE\\))\n- [Ruby Global $-K
+  (DollarDashK)](wiki/Ruby Global $-K (DollarDashK\\))\n- [Ruby Global $LOADED\\_FEATURES
+  (DollarLOADEDUnderscoreFEATURES)](wiki/Ruby Global $LOADED\\_FEATURES (DollarLOADEDUnderscoreFEATURES\\))\n-
+  [Ruby Global $PROGRAM\\_NAME (DollarPROGRAMUnderscoreNAME)](wiki/Ruby Global $PROGRAM\\_NAME
+  (DollarPROGRAMUnderscoreNAME\\))\n- [Ruby Global $-W (DollarDashW)](wiki/Ruby Global
+  $-W (DollarDashW\\))\n- [Ruby Global $\\\" (DollarQuote)](wiki/Ruby Global $\\\"
+  (DollarQuote\\))\n- [Ruby Global $$ (DollarDollar)](wiki/Ruby Global $$ (DollarDollar\\))\n-
+  [Ruby Global $* (DollarStar)](wiki/Ruby Global $* (DollarStar\\))\n- [Ruby Global
+  $, (DollarComma)](wiki/Ruby Global $, (DollarComma\\))\n- [Ruby Global $-0 (DollarDashZero)](wiki/Ruby
+  Global $-0 (DollarDashZero\\))\n- [Ruby Global $-F (DollarDashF)](wiki/Ruby Global
+  $-F (DollarDashF\\))\n- [Ruby Global $-I (DollarDashI)](wiki/Ruby Global $-I (DollarDashI\\))\n-
+  [Ruby Global $-a (DollarDasha)](wiki/Ruby Global $-a (DollarDasha\\))\n- [Ruby Global
+  $-d (DollarDashd)](wiki/Ruby Global $-d (DollarDashd\\))\n- [Ruby Global $-i (DollarDashi)](wiki/Ruby
+  Global $-i (DollarDashi\\))\n- [Ruby Global $-l (DollarDashl)](wiki/Ruby Global
+  $-l (DollarDashl\\))\n- [Ruby Global $-p (DollarDashp)](wiki/Ruby Global $-p (DollarDashp\\))\n-
+  [Ruby Global $-v (DollarDashv)](wiki/Ruby Global $-v (DollarDashv\\))\n- [Ruby Global
+  $-w (DollarDashw)](wiki/Ruby Global $-w (DollarDashw\\))\n- [Ruby Global $. (DollarDot)](wiki/Ruby
+  Global $. (DollarDot\\))\n- [Ruby Global $0 (DollarZero)](wiki/Ruby Global $0 (DollarZero\\))\n-
+  [Ruby Global $: (DollarColon)](wiki/Ruby Global $: (DollarColon\\))\n- [Ruby Global
+  $; (DollarSemicolon)](wiki/Ruby Global $; (DollarSemicolon\\))\n- [Ruby Global $<
+  (DollarLessthan)](wiki/Ruby Global $< (DollarLessthan\\))\n- [Ruby Global $> (DollarGreaterthan)](wiki/Ruby
+  Global $> (DollarGreaterthan\\))\n- [Ruby Global $? (Dollar?)](wiki/Ruby Global
+  $? (Dollar?\\))\n- [Ruby Global $DEBUG (DollarDEBUG)](wiki/Ruby Global $DEBUG (DollarDEBUG\\))\n-
+  [Ruby Global $FILENAME (DollarFILENAME)](wiki/Ruby Global $FILENAME (DollarFILENAME\\))\n-
+  [Ruby Global $LOAD_PATH (DollarLOADUnderscorePATH)](wiki/Ruby Global $LOAD_PATH
+  (DollarLOADUnderscorePATH\\))\n- [Ruby Global $VERBOSE (DollarVERBOSE)](wiki/Ruby
+  Global $VERBOSE (DollarVERBOSE\\))\n- [Ruby Global $\\\\ (DollarBackslash)](wiki/Ruby
+  Global $\\\\ (DollarBackslash\\))\n- [Ruby Global $_ (DollarUnderscore)](wiki/Ruby
+  Global $_ (DollarUnderscore\\))\n- [Ruby Global $stderr (Dollarstderr)](wiki/Ruby
+  Global $stderr (Dollarstderr\\))\n- [Ruby Global $stdin (Dollarstdin)](wiki/Ruby
+  Global $stdin (Dollarstdin\\))\n- [Ruby Global $stdout (Dollarstdout)](wiki/Ruby
+  Global $stdout (Dollarstdout\\))\n\n…\n\n- [Ruby Keyword: alias](wiki/Ruby Keyword%3A
+  alias)\n- [Ruby Keyword: and](wiki/Ruby Keyword%3A and)\n- [Ruby Keyword: begin](wiki/Ruby
+  Keyword%3A begin)\n- [Ruby Keyword: BEGIN](wiki/Ruby Keyword%3A BEGIN)\n- [Ruby
+  Keyword: break](wiki/Ruby Keyword%3A break)\n- [Ruby Keyword: case](wiki/Ruby Keyword%3A
+  case)\n- [Ruby Keyword: class](wiki/Ruby Keyword%3A class)\n- [Ruby Keyword: defined?](wiki/Ruby
+  Keyword%3A defined?)\n- [Ruby Keyword: def](wiki/Ruby Keyword%3A def)\n- [Ruby Keyword:
+  do](wiki/Ruby Keyword%3A do)\n- [Ruby Keyword: else](wiki/Ruby Keyword%3A else)\n-
+  [Ruby Keyword: elsif](wiki/Ruby Keyword%3A elsif)\n- [Ruby Keyword: \\_\\_ENCODING\\_\\_](wiki/Ruby
+  Keyword%3A \\_\\_ENCODING\\_\\_)\n- [Ruby Keyword: end](wiki/Ruby Keyword%3A end)\n-
+  [Ruby Keyword: END](wiki/Ruby Keyword%3A END)\n- [Ruby Keyword: ensure](wiki/Ruby
+  Keyword%3A ensure)\n- [Ruby Keyword: false](wiki/Ruby Keyword%3A false)\n- [Ruby
+  Keyword: \\_\\_FILE\\_\\_](wiki/Ruby Keyword%3A \\_\\_FILE\\_\\_)\n- [Ruby Keyword:
+  for](wiki/Ruby Keyword%3A for)\n- [Ruby Keyword: if](wiki/Ruby Keyword%3A if)\n-
+  [Ruby Keyword: in](wiki/Ruby Keyword%3A in)\n- [Ruby Keyword: \\_\\_LINE\\_\\_](wiki/Ruby
+  Keyword%3A \\_\\_LINE\\_\\_)\n- [Ruby Keyword: module](wiki/Ruby Keyword%3A module)\n-
+  [Ruby Keyword: next](wiki/Ruby Keyword%3A next)\n- [Ruby Keyword: nil](wiki/Ruby
+  Keyword%3A nil)\n- [Ruby Keyword: not](wiki/Ruby Keyword%3A not)\n- [Ruby Keyword:
+  or](wiki/Ruby Keyword%3A or)\n- [Ruby Keyword: redo](wiki/Ruby Keyword%3A redo)\n-
+  [Ruby Keyword: rescue](wiki/Ruby Keyword%3A rescue)\n- [Ruby Keyword: retry](wiki/Ruby
+  Keyword%3A retry)\n- [Ruby Keyword: return](wiki/Ruby Keyword%3A return)\n- [Ruby
+  Keyword: self](wiki/Ruby Keyword%3A self)\n- [Ruby Keyword: super](wiki/Ruby Keyword%3A
+  super)\n- [Ruby Keyword: then](wiki/Ruby Keyword%3A then)\n- [Ruby Keyword: true](wiki/Ruby
+  Keyword%3A true)\n- [Ruby Keyword: undef](wiki/Ruby Keyword%3A undef)\n- [Ruby Keyword:
+  unless](wiki/Ruby Keyword%3A unless)\n- [Ruby Keyword: until](wiki/Ruby Keyword%3A
+  until)\n- [Ruby Keyword: when](wiki/Ruby Keyword%3A when)\n- [Ruby Keyword: while](wiki/Ruby
+  Keyword%3A while)\n- [Ruby Keyword: yield](wiki/Ruby Keyword%3A yield)\n"
+Ruby Global $8 (DollarEight): ! 'The $8 global is the 8th group of the last successful
+  match. May be > 1.
+
+'
+Ruby Global $9 (DollarNine): ! 'The $9 global is the 9th group of the last successful
+  match. May be > 1.
+
+'
+! 'Ruby Keyword: retry': ! "Re-run the block that raised an Exception.\n\nFor example:\n\n
+  \   tries = 3\n    begin\n      puts \"Try ##{tries}.\"\n      1/0\n    rescue =>
+  e\n      tries -= 1\n      retry unless tries.zero?\n    end\n\nThis will output:\n\n
+  \   Try #3.\n    Try #2.\n    Try #1.\n\nSee also: begin, rescue, else, ensure\n"
+Ruby Global $VERBOSE (DollarVERBOSE): ! 'The $VERBOSE global is the verbose flag,
+  which is set by the -v switch.
+
+'
+! 'Ruby Keyword: rescue': ! "Catch exceptions.\n\nUsage:\n\n    begin\n      1/0\n
+  \   rescue => e\n      puts \"No division by zero ever bothered me.\"\n    end\n\nOr\n\n
+  \   def foo\n      1/0\n    rescue\n      puts \"Yep, works on 'def's, too.\"\n
+  \   end\n\nThis is the basic exception heirarchy:\n\n   Exception\n    NoMemoryError\n
+  \   ScriptError:\n      LoadError\n      NotImplementedError\n      SyntaxError\n
+  \   SignalException\n      Interrupt\n    StandardError\n      ArgumentError\n      IOError\n
+  \       EOFError\n      IndexError\n      LocalJumpError\n      NameError\n        NoMethodError\n
+  \     RangeError\n        FloatDomainError\n      RegexpError\n      RuntimeError\n
+  \     SecurityError\n      SystemCallError\n      SystemStackError\n      ThreadError\n
+  \     TypeError\n      ZeroDivisionError\n    SystemExit\n    fatal\n\nMore in Avdi
+  Grimm's book, Exceptional Ruby: http://pragprog.com/book/ager/exceptional-ruby\n#
+  TODO:\n#   Explain the args syntax\n#   Talk about Standard\n\nSee: ensure, else,
+  retry\n"
+Ruby Global $-I (DollarDashI): ! 'Aliased to $:
+
+'
+! 'Ruby Keyword: elsif': ! 'Is only checked when the preceding `if`/`elsif` conditions
+  evaluated false.
+
+
+  TODO - https://github.com/rking/pry-docmore/wiki
+
+'
+Ruby Global $5 (DollarFive): ! 'The $5 global is the 5th group of the last successful
+  match. May be > 1.
+
+'
+Ruby Global $0 (DollarZero): ! 'The $0 global contains the name of the script being
+  executed. May be assignable.
+
+  Alias: $PROGRAM_NAME
+
+'
+! 'Ruby Keyword: nil': ! 'Represents "nothing whatsoever".
+
+
+  Along with `false`, is the other value that evaluates to false in conditionals.
+
+'
+! 'Ruby Keyword: true': ! "not false.  Everything in Ruby (except `false` and `nil`)
+  are true.\n\n    if 0\n      puts \"Ruby.\"\n    else\n      puts \"Perl.\"\n    end\n"
+! 'Ruby Keyword: super': ! "Call the current method, but using the superclass's implementation.
+  Can be\nuseful so that subclasses can 'decorate' their parent class's functionality.\n\nA
+  subtle syntax issue is that, when this is called with no arguments, all\narguments
+  are passed up.\n\nFor example:\n\n    class Dad\n      def f *args; p args end\n
+  \   end\n    class Kid < Dad\n      def f *args; super end\n    end\n    Kid.new.f
+  1, 2\n\nOutputs:\n\n    [1, 2]\n\nThe way to stop this behavior is to use something
+  Ruby almost never requires:\nempty parens:\n\n    class Dad\n      def f *args;
+  p args end\n    end\n    class Kid < Dad\n      def f *args; super() end\n    end\n
+  \   Kid.new.f 1, 2\n\nOutputs:\n\n    []\n"
+! 'Ruby Keyword: alias': ! "The alias keyword is used to make synonyms of methods.\n\n
+  \ If you are used to the semantics of the `/bin/ln` command, get it out of your\n
+  \ head right now: Ruby does the opposite. That is, instead of `ln existing\n  new`,
+  Ruby's semantics are `alias new existing`. (Mnested Mnemonic: this `new`\n  sorting
+  is the b`a`-`n`-`e` of my `exist`ence.)\n\n  Also take particular note that this
+  is not a method call, but a keyword, so\n  it can do things method calls cannot.
+  The args are not :symbols (though they\n  are permitted to be), and it is a SyntaxError
+  to attempt to place a comma\n  between the args.\n\n  Note that, this being a keyword
+  and happening at compile-time, is not enough\n  to make dynamic assignments. See
+  {Module#alias_method} for that kind of\n  trickery.\n\nBasic Usage\n\n  def foo;
+  3 end\n  alias boo foo\n  boo\n  ⇒ 3\n\nSymbols as args\n\n  alias :zoo :boo # or
+  even mix and match, if you want to for some reason.\n  zoo\n  ⇒ 3\n\nSome decorating!\n\n
+  \ alias orig_foo foo\n  def foo; 4 + orig_foo end\n  foo\n  ⇒ 7\n  # See also Rails's
+  alias_method_chain for a formalization of this idiom.\n\nSee also: http://kresimirbojcic.com/2011/12/01/decorators-in-ruby.html\n"
+! 'Ruby Global $: (DollarColon)': ! 'The $: global is the Load path for scripts and
+  binary modules by load or require.
+
+
+  (After scripts are loaded, their path will be in $" )
+
+'
+Ruby Global $-0 (DollarDashZero): ! 'Aliased to $/
+
+'
+Ruby Global $? (Dollar?): ! "The $? global is the process status of the last executed
+  child process.\n\nIt is of type Process::Status, which implements the following
+  methods:\n  &  ==  >>  coredump?  exited?  exitstatus  inspect  pid  signaled?  stopped?\n
+  \ stopsig  success?  termsig  to_i  to\n\nFor example:\n\n  `head /dev/urandom |
+  grep \"Alas, poor Yorick! I knew him, Horatio…\"`\n  $?.success?\n  # *probably*
+  false\n"
+Ruby Global $PROGRAM_NAME (DollarPROGRAMUnderscoreNAME): ! 'The $PROGRAM_NAME global
+  contains the name of the script being executed.
+
+
+  May be assignable to affect the listing in ''ps'' output.
+
+
+  Same as $0
+
+'
+Ruby Global $" (DollarQuote): ! 'The $" global is an array containing the module names
+  loaded by require.
+
+
+  (Compare to the list of lookup paths in `$LOAD_PATH`, a.k.a `$:`)
+
+
+'
+! 'Ruby Keyword: while': ! "Loop as long as the condition holds.\n\n   puts 'Guess
+  a letter.'\n   while 'y' == $stdin.readline.chomp\n     puts 'Anything but that
+  one.'\n   end\n"
+! 'Ruby Keyword: END': ! "Like Perl and Awk before that, defines a block to be run
+  after the others:\n\n    p 1\n    END { p 4 }\n    p 2\n    END { p 3 }\n    # …prints
+  these out as 1, 2, 3, 4\n\nSee also: `BEGIN`\n(Not to be confused with lower-case
+  `end`)\n"
+Ruby Global $-w (DollarDashw): ! 'The $-w global is true if option -w is set.
+
+'
+! 'Ruby Keyword: self': ! "An ever-present variable in Ruby. At the very top level,
+  it is the \"(main)\"\nself, but everywhere else its value is very important to know.\n\nWithin
+  a method, it is the instance that received the method.\n\nWithin a class defintion,
+  it is the class itself. This explains why:\n\n    class Foo\n      def self.hi;
+  'hi' end # this is equivalent to:\n      def Foo.hi; 'hi' end # this.\n    end\n\n#
+  TODO:\n#  Explain eigenclasses\n#  …?\n"
+Ruby Global $FILENAME (DollarFILENAME): ! 'The $FILENAME global is the current input
+  file from $<.
+
+
+  Same as $<.filename.
+
+'
+Ruby Global $_ (DollarUnderscore): ! 'The $_ global is the last input line of string
+  by `gets` or `readline`.
+
+'
+! 'Ruby Keyword: and': ! "Boolean conjunction.\n\n  Only evaluates to `true` if both
+  its left and right side are true.\n\n  Remember that the 'and' operator is lower
+  precedence operator than '&&', so\n\n  an_expression and another_expression\n    is
+  roughly equivalent to:\n  (an_expression) && (another_expression)\n\nTruth table\n\n
+  \ true  and true  ⇒ true\n  false and true  ⇒ false\n  false and false ⇒ false\n\nPrecedence\n\n
+  \ true and not false ⇒ true\n  true && not false ⇒ SyntaxError\n  a = true and false;
+  a ⇒ true\n  a = true && false; a ⇒ false\n\nThe fowl chain\n\n  if false or true
+  && false then false elsif true and false or true then true end\n  ⇒ true\n\nSee
+  http://phrogz.net/ProgrammingRuby/language.html#table_18.4\n"
+Ruby Global $. (DollarDot): ! 'The $. global is the current input line number of the
+  last file that was read.
+
+'
+! 'Ruby Keyword: __ENCODING__': ! 'Read-only value of the current Encoding object
+  (which has methods:
+
+  ascii_compatible?  dummy?  inspect  name  names  replicate  to_s)
+
+
+  By default is: #<Encoding:US-ASCII>
+
+
+  But can be affected by the 1st or 2nd line of the file being something like:
+
+
+  # encoding: utf-8
+
+'
+Ruby Global $KCODE (DollarKCODE): ! 'The $KCODE global ...pry-docmore TODO!
+
+
+  Please update https://github.com/rking/pry-docmore/wiki/Ruby-Global-$KCODE-(DollarKCODE)
+
+'
+! 'Ruby Keyword: ensure': ! 'The sibling of `require` that is run when there is or
+  isn''t an exception.
+
+'
+Ruby Global $3 (DollarThree): ! 'The $3 global is the 3rd group of the last successful
+  match. May be > 1.
+
+'
+Ruby Global $1 (DollarOne): ! 'The $1 global is the 1st group of the last successful
+  match. May be > 1.
+
+'
+Ruby Global $stdin (Dollarstdin): ! 'The $stdin global is the current standard input.
+
+
+  This is file descriptor 0, traditionally.
+
+'
+! 'Ruby Keyword: yield': ! "Run the block passed to a method.\n\n    def foo\n      p
+  1\n      yield 2\n      p 3\n    end\n    foo do |i|\n      p i\n    end\n\nPrints:\n\n
+  \   1\n    2\n    3\n"
+Ruby Global $+ (DollarPlus): ! "The $+ global is the highest group matched by the
+  last successful match.\n\nThis:\n\n    str = 'hello goodbye'; str[/he(llo) g(o(od))/];
+  $+\n\nShows:\n\n    \"od\"\n"
+Ruby Global $$ (DollarDollar): ! "The $$ global is the process number of the Ruby
+  running this script.\n\nCan be used for process control tricks, such as recording
+  in a \"pidfile\" so\nother processes can later kill the current one, or accessing
+  \"/proc/#$$\" on\nsystems (such as Linux) having a mounted procfs.\n\nTraditionally
+  used in shell scripts for a quick way to generate a semi-unique\ntemp filename,
+  but this is better achieved like:\n\n    require 'tempfile'\n    t = Tempfile.new
+  'hi'\n    # produces a file like: /tmp/hi20121119-2774-1buu566 (because $$ == 2774)\n"
+Ruby Global $LOAD_PATH (DollarLOADUnderscorePATH): ! 'Aliased to $:
+
+'
+! 'Ruby Keyword: unless': ! "Equivalent to `if not`, but with very clear precedence.
+  Especially popular in\nthe \"Yoda if\" form:\n\n    fail \"Oh no!\" unless valid?\n"
+Ruby Global $-K (DollarDashK): ! 'The $-K global ...pry-docmore TODO!
+
+
+  Please update https://github.com/rking/pry-docmore/wiki/Ruby-Global-$-K-(DollarDashK)
+
+'
+Ruby Global $~ (DollarSquiggle): ! 'The $~ global is the match-data about the last
+  match in the current scope.
+
+'
+! 'Ruby Keyword: in': ! 'Goes with the `for` keyword.
+
+
+  # Anything else?  If so, let us know: https://github.com/rking/pry-docmore/wiki
+
+'
+Ruby Global $stderr (Dollarstderr): ! 'The $stderr global is the current standard
+  error output.
+
+
+  This is file descriptor 2, traditionally.
+
+'
+! 'Ruby Keyword: end': ! 'The single biggest wart in the Ruby syntax (because sleeker
+  languages, such as
+
+  CoffeeScript, imply it by indentation.)
+
+'
+! 'Ruby Keyword: else': ! 'The part of a condition that happens when none if the `if`
+  or `elsif` parts
+
+  hold true. Also works with `case` and `rescue`.
+
+
+  TODO - https://github.com/rking/pry-docmore/wiki
+
+'
+! 'Ruby Keyword: then': ! "A keyword that is generally needless. For example, these
+  all work:\n\n    if 3 then\n      puts 'hi'\n    end\n    if 3\n      puts 'hi'\n
+  \   end\n\n    if 3 then 'yes' else 'no' end\n    if 3; 'yes' else 'no' end\n    3
+  ? 'yes' : 'no'\n\n    case x\n    when 3 then puts 'yo' end\n    when 4; puts 'yo'
+  end\n    end\n"
+Ruby Global $* (DollarStar): ! 'The $* global is the ARGV, the command line arguments
+  given for the script.
+
+'
+Ruby Global $& (DollarAmpersand): ! "The $& global is the string matched by the last
+  successful match.\n\nIf you do this:\n\n    str = 'hello goodbye'; str[/good/]\n\nThen
+  this:\n\n    [ $`, $&, $' ]\n\nYields this:\n\n    [\n        \"hello \",\n        \"good\",\n
+  \       \"bye\"\n    ]\n"
+Ruby Global $SAFE (DollarSAFE): ! 'This variable determines the "level of paranoia",
+  restricting the set of legal
+
+  operations.
+
+
+  See: http://www.ruby-doc.org/docs/ProgrammingRuby/html/taint.html
+
+'
+Ruby Global $⁄ (DollarSlash): ! 'The $/ global is the input record separator, newline
+  by default.
+
+
+  This affects String#each_lines, String#lines, and String#chomp
+
+'

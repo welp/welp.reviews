@@ -1,0 +1,18 @@
+pry-pretty-numeric
+==================
+
+This is a plugin for Pry.
+Simply it makes Pry print numeric including '_' between each 3 digits like this.
+
+    pry(main)> 12345678
+    => 12_345_678
+
+    pry(main)> 1234.5678
+    => 1_234.567_8
+
+USAGE
+-----
+
+    gem install pry-pretty-numeric
+
+    % pry

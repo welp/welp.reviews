@@ -1,0 +1,14 @@
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/interception-0.5/ext
+/Users/gjtorikian/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20170504-41950-1imc9y6.rb extconf.rb 
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/interception-0.5/ext
+make "DESTDIR=" clean
+make: *** No rule to make target `clean'.  Stop.
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/interception-0.5/ext
+make "DESTDIR="
+:
+
+current directory: /Users/gjtorikian/Developer/welp.reviews/vendor/gems/ruby/2.4.0/gems/interception-0.5/ext
+make "DESTDIR=" install
+:
