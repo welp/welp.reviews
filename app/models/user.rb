@@ -6,6 +6,6 @@ class User < ApplicationRecord
   has_many :reviews
   has_many :tips
 
-  validates :username, presence: true, uniqueness: true, length: { in: 6..20 }
+  validates :username, presence: true, uniqueness: true, length: { maximum: 20 }
   validates :email, presence: true, uniqueness: true, format: /@/ # lol
 end

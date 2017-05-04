@@ -3,3 +3,6 @@
 
 require_relative 'seeds/categories'
 require_relative 'seeds/restaurants'
+require_relative 'seeds/users'
+require_relative 'seeds/reviews'
+require_relative 'seeds/tips'
