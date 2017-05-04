@@ -6,15 +6,15 @@ Mutations::AddTip = GraphQL::Relay::Mutation.define do
 
   return_field :tip, Types::Tip
 
-  resolve -> (object, inputs, ctx) {
+  resolve -> (object, inputs, context) {
     restaurant = Restaurant.find(inputs[:restaurantID])
 
-    tip = restaurant.tips.build(body: inputs[:body])
+    tip = restaurant.tips.build(user: context[:current_user], body: inputs[:body])
 
-    tip.save!
-
-    response = {
-      tip: tip
-    }
+    if tip.save
+      { tip: tip }
+    else
+      raise GraphQL::ExecutionError.new("Invalid input for Tip: #{tip.errors.full_messages.join(', ')}")
+    end
   }
 end

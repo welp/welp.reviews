@@ -6,8 +6,8 @@ class RestaurantInfo < ApplicationRecord
   VALID_ATTIRE = ['Casual', 'Dressy', 'Formal (Jacket Required)']
   VALID_AMBIENCE = ['Divey', 'Hipster', 'Casual', 'Touristy', 'Trendy', 'Intimate', 'Romantic', 'Classy', 'Upscale']
   VALID_NOISE_LEVEL = ['Quiet', 'Average', 'Loud', 'Very Loud']
-  VALID_ALCOHOL = ['Beer Only', 'Wine Only', 'Beer & Wine Only', 'Full Bar']
-  VALID_BEST_NIGHTS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+  VALID_ALCOHOL = ['None', 'Beer & Wine Only', 'Full Bar']
+  VALID_BEST_NIGHTS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
   VALID_WIFI = ['None', 'Free', 'Paid']
 
   validates :attire,      inclusion: { in: VALID_ATTIRE },      allow_blank: true
