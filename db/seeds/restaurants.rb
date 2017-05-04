@@ -166,6 +166,7 @@ unless Restaurant.where(name: 'Coava Coffee Roasters').exists?
     parking: ['Street'],
     bike_parking: true,
     wheelchair_accessible: true,
+    alcohol: 'None',
     outdoor_seating: true,
     wifi: 'Free',
     caters: false,
