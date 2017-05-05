@@ -1,0 +1,13 @@
+query {
+  restaurants(offersDelivery: true, price: "$", isClosed: false) {
+    name
+    rating
+
+    categories {
+      name
+    }
+
+    menuUrl
+    phone
+  }
+}

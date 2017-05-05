@@ -1,0 +1,13 @@
+query {
+  # By default we pass (page: 1, perPage: 25) to restaurants
+  restaurants {
+    id
+    name
+    rating
+    photoUrl
+
+    categories {
+      name
+    }
+  }
+}

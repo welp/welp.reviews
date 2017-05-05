@@ -1,0 +1,43 @@
+query {
+  # By default we pass (page: 1, perPage: 25) to restaurants
+  restaurants {
+    id
+    name
+    rating
+    price
+    url
+    menuUrl
+    closed
+    address
+    phone
+    hours
+
+    # All of the below fields actually live off of the Restaurant's associated
+    # RestaurantInfo record as extended information, but we can just expose it
+    # as a part of the restaurant itself in our GraphQL schema. Like REST, you
+    # aren't tied to the structure of your database.
+    takesReservations
+    offersDelivery
+    hasTakeout
+    acceptsCreditCards
+    goodFor
+    parkingOptions
+    hasBikeParking
+    isWheelchairAccessible
+    isGoodForKids
+    isGoodForGroups
+    attire
+    ambience
+    noiseLevel
+    alcohol
+    hasHappyHour
+    bestNights
+    allowsSmoking
+    hasOutdoorSeating
+    hasWifi
+    hasTV
+    dogFriendly
+    caters
+    hasGenderNeutralRestrooms
+  }
+}

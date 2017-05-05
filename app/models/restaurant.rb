@@ -13,6 +13,8 @@ class Restaurant < ApplicationRecord
 
   # Get a restaurant's rating to the nearest half star
   def rating
-    (reviews.average(:rating) * 2).round / 2.0
+    average = reviews.average(:rating) || 0
+
+    (average * 2).round / 2.0
   end
 end

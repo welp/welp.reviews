@@ -29,6 +29,7 @@ Types::Restaurant = GraphQL::ObjectType.define do
 
   field :url, Types::URI, "The Restaurant's external URL."
   field :menuUrl, Types::URI, "A URL to the Restaurant's menu.", property: :menu_url
+  field :photoUrl, Types::URI, 'A URL to a photo of the Restaurant or its food', property: :photo_url
   field :closed, !types.Boolean, 'Whether or not the Restaurant is permanently closed.'
   field :address, types.String, 'The physical address of the Restaurant.'
   field :phone, types.String, 'A number you can use to call the Restaurant on a phone.'
