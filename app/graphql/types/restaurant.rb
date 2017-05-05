@@ -5,6 +5,8 @@ Types::Restaurant = GraphQL::ObjectType.define do
   field :id, !types.Int, "The Restaurant's unique identifier."
   field :name, !types.String, 'What the owners of the Restaurant decided to call it.'
 
+  field :rating, !types.Int, "The Restaurant's average rating."
+
   field :categories, !types[!Types::Category] do
     description 'The categories this Restaurant belongs in, from most to least relevant.'
 
