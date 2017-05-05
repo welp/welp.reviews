@@ -1,0 +1,8 @@
+mutation AddTipToExpatriate($restaurantID: Int!, $body: String!) {
+  addTip(input: { restaurantID: $restaurantID, body: $body }) {
+    tip {
+      id
+      body
+    }
+  }
+}
