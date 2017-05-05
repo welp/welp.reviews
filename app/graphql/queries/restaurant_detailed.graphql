@@ -1,6 +1,5 @@
 query {
-  # By default we pass (page: 1, perPage: 25) to restaurants
-  restaurants {
+  restaurant(id: 1) {
     id
     name
     rating
@@ -13,10 +12,33 @@ query {
     phone
     hours
 
-    # All of the below fields actually live off of the Restaurant's associated
-    # RestaurantInfo record as extended information, but we can just expose it
-    # as a part of the restaurant itself in our GraphQL schema. Like REST, you
-    # aren't tied to the structure of your database.
+    categories {
+      id
+      name
+      parent {
+        id
+        name
+      }
+    }
+
+    reviews {
+      id
+      rating
+      body
+      user {
+        id
+        username
+      }
+    }
+
+    tips {
+      body
+      user {
+        id
+        username
+      }
+    }
+
     takesReservations
     offersDelivery
     hasTakeout

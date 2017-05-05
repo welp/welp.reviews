@@ -1,0 +1,30 @@
+query {
+  currentUser {
+    id
+    username
+
+    reviews {
+      restaurant {
+        name
+      }
+    }
+
+    name
+    nickname
+    tagline
+    thingsILove
+    findMeIn
+    hometown
+    website
+    whenImNotWelping
+    secondFavoriteSite
+    lastReadBook
+    firstConcert
+    favoriteMovie
+    lastMealOnEarth
+    biggestSecret
+    mostRecentDiscovery
+    currentCrush
+    language
+  }
+}
