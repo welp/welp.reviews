@@ -1,4 +1,4 @@
-![](public/welp.png)
+![](public/welp_red.png)
 
 To get started, make sure you have Ruby 2.3 or higher and the `bundler` gem installed. Then:
 
