@@ -7,6 +7,8 @@ Types::Restaurant = GraphQL::ObjectType.define do
 
   field :rating, !types.Int, "The Restaurant's average rating."
 
+  field :databaseId, !types.Int, "Please don't request this. Use `id` instead.", deprecated: true, property: :id
+
   field :categories, !types[!Types::Category] do
     description 'The categories this Restaurant belongs in, from most to least relevant.'
 
